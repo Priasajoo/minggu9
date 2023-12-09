@@ -5,7 +5,7 @@ function tambahHari($hari, $tanggal) {
 }
 
 $hariIni = "9 Desember 2023";
-$jumlahHari = 1000;
+$jumlahHari = -500;
 $hasil = tambahHari($jumlahHari, $hariIni);
-echo "1000 hari yang akan datang setelah tanggal $hariIni adalah $hasil";
+echo "500 hari yang lalu dari tanggal $hariIni adalah $hasil";
 ?>

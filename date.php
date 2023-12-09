@@ -1,22 +1,11 @@
 <?php
-$todayDate = "9 des 2023";
-$returnDate = date('d-m-Y , strtotime(+100 day($todayDate)));
+function tambahHari($hari, $tanggal) {
+    $waktu = strtotime("+$hari days", strtotime($tanggal));
+    return date('d F Y', $waktu);
+}
 
+$hariIni = "9 Desember 2023";
+$jumlahHari = 1000;
+$hasil = tambahHari($jumlahHari, $hariIni);
+echo "1000 hari yang akan datang setelah tanggal $hariIni adalah $hasil";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head?
-
-  <body>
-       <h3>
-           Tanggal hari ini = <?= $todayDate; ?>
-           <br>
-           Tanggal 100 hari dari skrg = <?= $returnDate; ?>
-          </h3>
-        </body>
-
-        </html>
